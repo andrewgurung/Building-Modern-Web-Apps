@@ -1,0 +1,19 @@
+{
+  "name": "labelr",
+  "version": "1.0.0",
+  "description": "``` ########################################    ___ _____   _____  _____  __    ____   |_  /  ___| / __  \\|  _  |/  |  / ___|     | \\ `--.  `' / /'| |/' |`| | / /___     | |`--. \\   / /  |  /| | | | | ___ \\ /\\__/ /\\__/ / ./ /___\\ |_/ /_| |_| \\_/ | \\____/\\____/  \\_____/ \\___/ \\___/\\_____/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgurung/Building-Modern-Web-Apps.git"
+  },
+  "author": "Andrew Gurung (http://andrewgurung.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewgurung/Building-Modern-Web-Apps/issues"
+  },
+  "homepage": "https://github.com/andrewgurung/Building-Modern-Web-Apps#readme"
+}
