@@ -1,1 +1,1 @@
-document.write('Hello JS 2016!')
+var React = require('react')
