@@ -1,11 +1,9 @@
-var React = require('react')
+import React from 'react'
 
-// Create simple Hello component
-var Hello = React.createClass({
-  render: function () {
+const Hello = React.createClass({
+  render() {
     return <div>Hello, {this.props.name}</div>
   }
 })
 
-// `.render(what_to_render, where_to_render)`
-React.render(<Hello name="JS 2016!"/>, document.body)
+React.render(<Hello name="JS 2016"/>, document.body)
