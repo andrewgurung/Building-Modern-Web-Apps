@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './styles/main.css'
 
 const Hello = React.createClass({
   render() {
