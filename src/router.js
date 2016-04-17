@@ -2,8 +2,21 @@ import Router from 'ampersand-router'
 import React from 'react'
 import PublicPage from './pages/public'
 import ReposPage from './pages/repos'
+import Layout from './layout'
 
 export default Router.extend({
+  renderPage(page, opts = {layout: true}) {
+    if(opts.layout) {
+      page = (
+        <Layout>
+          {page}
+        </Layout>
+      )
+    }
+
+    React.render(page, document.body)
+  },
+  
   routes: {
     // route path : handler string 'public'--> function 'public(){..}'
     // http://localhost:3000/ --> prints 'public page' on console
@@ -12,10 +25,10 @@ export default Router.extend({
   },
 
   public() {
-    React.render(<PublicPage/>, document.body)
+    this.renderPage(<PublicPage/>, {layout: false})
   },
 
   repos() {
-    React.render(<ReposPage/>, document.body)
+    this.renderPage(<ReposPage/>)
   }
 })
