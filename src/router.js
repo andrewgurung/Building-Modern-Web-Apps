@@ -3,6 +3,7 @@ import React from 'react'
 import PublicPage from './pages/public'
 import ReposPage from './pages/repos'
 import Layout from './layout'
+import Navigation from './components/nav-helper'
 
 export default Router.extend({
   renderPage(page, opts = {layout: true}) {
@@ -16,7 +17,7 @@ export default Router.extend({
 
     React.render(page, document.body)
   },
-  
+
   routes: {
     // route path : handler string 'public'--> function 'public(){..}'
     // http://localhost:3000/ --> prints 'public page' on console
