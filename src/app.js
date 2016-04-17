@@ -1,7 +1,10 @@
 import Router from './router'
 import styles from './styles/main.styl'
+import app from 'ampersand-app'
 
-window.app = {
+window.app = app
+
+app.extend({
   init() {
     // Create a router instance
     this.router = new Router()
@@ -11,6 +14,6 @@ window.app = {
     // .start() will trigger it
     this.router.history.start()
   }
-}
+})
 
-window.app.init()
+app.init()
