@@ -22,7 +22,8 @@ export default Router.extend({
     // route path : handler string 'public'--> function 'public(){..}'
     // http://localhost:3000/ --> prints 'public page' on console
     '': 'public',
-    'repos': 'repos'
+    'repos': 'repos',
+    'login': 'login'
   },
 
   public() {
@@ -31,5 +32,9 @@ export default Router.extend({
 
   repos() {
     this.renderPage(<ReposPage/>)
+  },
+
+  login () {
+    window.location = 'https://github.com/login/oauth/authorize?';
   }
 })
