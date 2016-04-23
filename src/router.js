@@ -38,7 +38,7 @@ export default Router.extend({
   login () {
     window.location = 'https://github.com/login/oauth/authorize?' + qs.stringify({
       client_id: '8eba3eeeac52abf68302',
-      redirect_uri: window.location.origin + 'auth/callback',
+      redirect_uri: window.location.origin + '/auth/callback',
       scope: 'user,repo'
     });
   }
