@@ -49,6 +49,10 @@ export default Router.extend({
     query = qs.parse(query);
     console.log( query );
 
+    // Setup heroku app cloning 'https://github.com/prose/gatekeeper' tool
+    // that to stores our app's client id and client secret
+    // Then use this heroku app as a mediator to get `access-token` from Github
+    // The returned access-token will be used to access Github API on user's behalf
     xhr({
       url: 'https://labelr-localhost-gurunga.herokuapp.com/authenticate/' + query.code,
       json: true
