@@ -24,7 +24,8 @@ export default Router.extend({
     // http://localhost:3000/ --> prints 'public page' on console
     '': 'public',
     'repos': 'repos',
-    'login': 'login'
+    'login': 'login',
+    'auth/callback?:query': 'authCallback'
   },
 
   public() {
@@ -41,5 +42,9 @@ export default Router.extend({
       redirect_uri: window.location.origin + '/auth/callback',
       scope: 'user,repo'
     });
+  },
+
+  authCallback(query) {
+    
   }
 })
